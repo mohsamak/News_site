@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emdo", "emdo\emdo.csproj", "{048547A1-A4AC-43C1-882E-F65074EF906E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048547A1-A4AC-43C1-882E-F65074EF906E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048547A1-A4AC-43C1-882E-F65074EF906E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048547A1-A4AC-43C1-882E-F65074EF906E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048547A1-A4AC-43C1-882E-F65074EF906E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69D14D3B-45CC-4AE7-9D68-93F9C36B5203}
+	EndGlobalSection
+EndGlobal

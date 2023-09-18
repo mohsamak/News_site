@@ -1,0 +1,53 @@
+﻿@model user
+@{
+    ViewBag.Title = "edit";
+}
+
+<h2>edit</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>edit</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row" style="margin:auto;">
+        <div class="col-8 " style="margin:auto;">
+            <form method="post">
+                @*<input type="hidden" name="id" value="@Model.Id" />*@
+                @Html.HiddenFor(n => n.Id)
+                <div class="form-group">
+                    @Html.LabelFor(n => n.username)
+                    @Html.TextBoxFor(n => n.username, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(n => n.username, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(n => n.email)
+                    @Html.TextBoxFor(n => n.email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(n => n.email, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(n => n.age)
+                    @Html.TextBoxFor(n => n.age, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(n => n.age, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(n => n.address)
+                    @Html.DropDownListFor(n => n.address, (SelectList)ViewBag.dept, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(n => n.address, "", new { @class = "text-danger" })
+                </div>
+                <input type="submit" value="save" />
+
+            </form>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
+
+

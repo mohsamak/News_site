@@ -1,0 +1,35 @@
+﻿@model catalog
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Catalog</h2>
+<form>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                @Html.ActionLink("sport", "sport", new { id = Model.ID }) 
+            </td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                @Html.ActionLink("economy news", "economynews", new { id = Model.ID })
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                @Html.ActionLink("politics news", "politics news", new { id = Model.ID })
+
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+

@@ -1,0 +1,24 @@
+﻿@model user
+@{
+    ViewBag.Title = "profile";
+}
+
+<h2> Welcom @Model.username</h2>
+<table width="100%" style="font-size:20px;">
+    <tr>
+        <td>
+            E-mail:@Model.email;
+            <br/>  <br/>
+            Age :@Model.age years old;
+        </td>
+        <td>
+            <img src="~/attach/@Model.photo" width="200" height="200"/>
+        </td>
+        <td></td>
+        <td>@Html.ActionLink("edit","edit",new { id=Model.Id},new {@class="btn btn- info" })</td>
+    </tr>
+</table>
+<h5>
+    Address:@Model.address;
+</h5>
+

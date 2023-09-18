@@ -1,0 +1,30 @@
+﻿@model news
+@{
+    ViewBag.Title = "delete";
+}
+
+<h2>delete</h2>
+<h1>@Model.title</h1>
+<div style="text-align:center">
+    <img src="@Model.photo" width="500" height="400" />
+</div>
+<br />
+<br />
+<p style="font-size:18px; color:#191c38">
+    @Model.desc
+</p>
+<br />
+<br />
+<p style="font-size:10px; color:#78e1e1" ;>
+
+    <table width="70%">
+        <tr>
+            <td>catalog: @Model.catalog.name </td>
+            <td></td>
+            <td>Date:@Model.date  </td>
+            <td></td>
+            <td>Author:@Model.user.username</td>
+            <td></td>
+        </tr>
+    </table>
+</p>
